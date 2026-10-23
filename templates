@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول للمنصة</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #666;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #455a64;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #37474f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>منصة سر التفوق التعليمية</h2>
+    <form action="/login" method="POST">
+        <div class="form-group">
+            <label for="phone">أدخل رقم الموبيل المشترك به:</label>
+            <input type="text" id="phone" name="phone" placeholder="01xxxxxxxxx" required autocomplete="off">
+        </div>
+        <button type="submit">دخول الامتحان</button>
+    </form>
+</div>
+
+</body>
+</html>
